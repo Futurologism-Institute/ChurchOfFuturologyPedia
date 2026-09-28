@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Computability Theory — Core Results | FuturPedia</title>
+<style>body{font-family:system-ui,sans-serif;max-width:860px;margin:2rem auto;padding:0 1rem;line-height:1.55}.sym{font-family:"Cambria Math",serif;font-size:1.12em}.axiom{background:#eef;padding:.7rem 1rem;border-left:4px solid #36c;margin:1rem 0}h1{border-bottom:2px solid #222}</style>
+</head>
+<body>
+<h1>Computability Theory</h1>
+
+<div class="axiom"><strong>Recursive / Computable Function</strong><br>
+A partial function f : ℕ ⇀ ℕ is partial recursive iff it is computed by some Turing machine (or equivalently by a partial recursive definition via μ-operator).</div>
+
+<div class="axiom"><strong>Halting Problem</strong><br>
+The set <span class="sym">K = {⟨e,x⟩ | φ_e(x)↓}</span> is recursively enumerable but not recursive.<br>
+There is no algorithm that decides, for arbitrary e and x, whether the e-th Turing machine halts on x.</div>
+
+<div class="axiom"><strong>Rice’s Theorem</strong><br>
+Any non-trivial semantic property of partial recursive functions is undecidable.</div>
+
+<div class="axiom"><strong>Recursion Theorem (Kleene)</strong><br>
+For every total recursive f there exists e such that φ_e ≃ φ_{f(e)}.</div>
+
+<p><em>FuturPedia formalization.</em></p>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Modal Logic — Symbolic Core | FuturPedia</title>
+<style>body{font-family:system-ui,sans-serif;max-width:860px;margin:2rem auto;padding:0 1rem;line-height:1.55}.sym{font-family:"Cambria Math",serif;font-size:1.12em}.axiom{background:#eef;padding:.7rem 1rem;border-left:4px solid #36c;margin:1rem 0}h1{border-bottom:2px solid #222}</style>
+</head>
+<body>
+<h1>Modal Logic</h1>
+
+<p>Extension of classical propositional (or predicate) logic with operators □ (necessity) and ◇ (possibility).</p>
+
+<div class="axiom"><strong>Syntax</strong><br>
+If φ is a formula then □φ and ◇φ are formulas.<br>
+◇φ ≜ ¬□¬φ</div>
+
+<div class="axiom"><strong>Kripke Semantics</strong><br>
+A frame is a pair (W,R) where W is a set of worlds and R ⊆ W×W an accessibility relation.<br>
+A model is (W,R,V) with valuation V.<br>
+<span class="sym">M,w ⊨ □φ</span> iff ∀v (wRv → M,v ⊨ φ)</div>
+
+<h2>Normal Systems</h2>
+<ul>
+<li><strong>K</strong>: □(φ→ψ) → (□φ → □ψ) + Necessitation</li>
+<li><strong>T</strong>: K + □φ → φ &nbsp;(reflexive)</li>
+<li><strong>S4</strong>: T + □φ → □□φ &nbsp;(reflexive + transitive)</li>
+<li><strong>S5</strong>: S4 + ◇φ → □◇φ &nbsp;(equivalence relation)</li>
+</ul>
+
+<p><em>FuturPedia formalization.</em></p>
+</body>
+</html>

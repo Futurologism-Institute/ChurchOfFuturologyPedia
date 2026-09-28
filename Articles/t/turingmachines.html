@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Turing Machines — Symbolic Definition | FuturPedia</title>
+<style>body{font-family:system-ui,sans-serif;max-width:860px;margin:2rem auto;padding:0 1rem;line-height:1.55}.sym{font-family:"Cambria Math",serif;font-size:1.12em}.axiom{background:#eef;padding:.7rem 1rem;border-left:4px solid #36c;margin:1rem 0}h1{border-bottom:2px solid #222}</style>
+</head>
+<body>
+<h1>Turing Machines</h1>
+
+<div class="axiom">
+A (deterministic single-tape) Turing machine is a 7-tuple<br>
+<span class="sym">M = (Q, Σ, Γ, δ, q₀, q_accept, q_reject)</span><br>
+where:
+<ul>
+<li>Q finite set of states</li>
+<li>Σ finite input alphabet (blank ∉ Σ)</li>
+<li>Γ tape alphabet, Σ ⊆ Γ, blank □ ∈ Γ</li>
+<li>δ : Q × Γ → Q × Γ × {L,R} transition function</li>
+<li>q₀ ∈ Q start state</li>
+<li>q_accept, q_reject ∈ Q distinct halting states</li>
+</ul>
+</div>
+
+<h2>Configuration</h2>
+<p>A configuration is a triple <span class="sym">(q, u, v)</span> where q ∈ Q, uv is the tape content (u left of head, v right including current cell).</p>
+
+<h2>Computation</h2>
+<p>One step: apply δ to current state and scanned symbol, update state, write symbol, move head.</p>
+<p><span class="sym">M accepts w</span> iff there is a finite sequence of configurations from the start configuration on w to one containing q_accept.</p>
+
+<h2>Church–Turing Thesis (statement)</h2>
+<p>Every effectively calculable function is computable by a Turing machine.</p>
+
+<p><em>FuturPedia formalization.</em></p>
+</body>
+</html>

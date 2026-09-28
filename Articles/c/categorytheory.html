@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Category Theory — Symbolic Core | FuturPedia</title>
+<style>body{font-family:system-ui,sans-serif;max-width:860px;margin:2rem auto;padding:0 1rem;line-height:1.55}.sym{font-family:"Cambria Math",serif;font-size:1.12em}.axiom{background:#eef;padding:.7rem 1rem;border-left:4px solid #36c;margin:1rem 0}h1{border-bottom:2px solid #222}</style>
+</head>
+<body>
+<h1>Category Theory — Symbolic Core</h1>
+
+<h2>Definition of a Category</h2>
+<div class="axiom">
+A <strong>category</strong> <span class="sym">𝒞</span> consists of:
+<ul>
+<li>a collection of objects <span class="sym">Ob(𝒞)</span></li>
+<li>for every pair of objects A,B a set of morphisms <span class="sym">Hom(A,B)</span></li>
+<li>a composition operation <span class="sym">∘ : Hom(B,C) × Hom(A,B) → Hom(A,C)</span></li>
+<li>identity morphisms <span class="sym">id_A ∈ Hom(A,A)</span></li>
+</ul>
+satisfying:
+</div>
+
+<div class="axiom"><strong>Associativity</strong><br>
+<span class="sym">(h ∘ g) ∘ f = h ∘ (g ∘ f)</span></div>
+
+<div class="axiom"><strong>Unit laws</strong><br>
+<span class="sym">id_B ∘ f = f = f ∘ id_A</span> for f : A → B</div>
+
+<h2>Key Concepts (Symbolic)</h2>
+<ul>
+<li><strong>Isomorphism</strong>: f : A → B is an iso iff ∃g : B → A with g∘f = id_A and f∘g = id_B.</li>
+<li><strong>Functor</strong> F : 𝒞 → 𝒟 preserves composition and identities.</li>
+<li><strong>Natural transformation</strong> η : F ⇒ G consists of components η_A : F(A) → G(A) natural in A.</li>
+<li><strong>Adjunction</strong>: F ⊣ G with unit η and counit ε satisfying the triangle identities.</li>
+</ul>
+
+<p><em>FuturPedia formalization.</em></p>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Classical Propositional & First-Order Logic | FuturPedia</title>
+<style>body{font-family:system-ui,sans-serif;max-width:860px;margin:2rem auto;padding:0 1rem;line-height:1.55}.sym{font-family:"Cambria Math",serif;font-size:1.12em}.axiom{background:#eef;padding:.7rem 1rem;border-left:4px solid #36c;margin:1rem 0}h1{border-bottom:2px solid #222}</style>
+</head>
+<body>
+<h1>Classical Logic</h1>
+
+<h2>Propositional Logic</h2>
+<p>Language generated from atomic propositions by ¬, ∧, ∨, →, ↔.</p>
+
+<div class="axiom"><strong>Semantics</strong><br>
+A valuation v assigns each atom a truth value in {0,1}. Extended recursively:<br>
+v(¬φ)=1−v(φ), v(φ∧ψ)=min(v(φ),v(ψ)), etc.</div>
+
+<div class="axiom"><strong>Tautology</strong><br>
+φ is a tautology (⊨φ) iff v(φ)=1 for every valuation v.</div>
+
+<h2>First-Order Logic</h2>
+<p>Language with variables, constant/function/predicate symbols, quantifiers ∀, ∃.</p>
+
+<div class="axiom"><strong>Structure</strong><br>
+A structure 𝔐 = (M, I) consists of a non-empty domain M and an interpretation I of the non-logical symbols.</div>
+
+<div class="axiom"><strong>Satisfaction</strong><br>
+<span class="sym">𝔐 ⊨ φ[a]</span> defined inductively (Tarski).</div>
+
+<div class="axiom"><strong>Logical Consequence</strong><br>
+<span class="sym">Γ ⊨ φ</span> iff every model of Γ is a model of φ.</div>
+
+<div class="axiom"><strong>Gödel Completeness</strong><br>
+<span class="sym">Γ ⊨ φ  ⇔  Γ ⊢ φ</span> (for first-order logic).</div>
+
+<p><em>FuturPedia formalization.</em></p>
+</body>
+</html>

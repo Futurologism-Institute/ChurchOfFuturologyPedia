@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Set Theory (ZFC) — Symbolic Formalization | FuturPedia</title>
+<style>body{font-family:system-ui,sans-serif;max-width:860px;margin:2rem auto;padding:0 1rem;line-height:1.55}.sym{font-family:"Cambria Math",serif;font-size:1.12em}.axiom{background:#eef;padding:.7rem 1rem;border-left:4px solid #36c;margin:1rem 0}h1{border-bottom:2px solid #222}</style>
+</head>
+<body>
+<h1>Zermelo–Fraenkel Set Theory with Choice (ZFC)</h1>
+<p>First-order theory whose only non-logical symbol is the binary membership relation <span class="sym">∈</span>.</p>
+
+<h2>Language</h2>
+<p>Variables: <span class="sym">x, y, z, …</span><br>
+Atomic formulas: <span class="sym">x ∈ y</span>, <span class="sym">x = y</span><br>
+Connectives & quantifiers: standard first-order.</p>
+
+<h2>Axioms</h2>
+
+<div class="axiom"><strong>Extensionality</strong><br>
+<span class="sym">∀x∀y (∀z (z∈x ↔ z∈y) → x=y)</span></div>
+
+<div class="axiom"><strong>Empty Set</strong><br>
+<span class="sym">∃x ∀y ¬(y∈x)</span> &nbsp;&nbsp;(denoted ∅)</div>
+
+<div class="axiom"><strong>Pairing</strong><br>
+<span class="sym">∀x∀y ∃z ∀w (w∈z ↔ (w=x ∨ w=y))</span></div>
+
+<div class="axiom"><strong>Union</strong><br>
+<span class="sym">∀x ∃y ∀z (z∈y ↔ ∃w (z∈w ∧ w∈x))</span></div>
+
+<div class="axiom"><strong>Power Set</strong><br>
+<span class="sym">∀x ∃y ∀z (z∈y ↔ ∀w (w∈z → w∈x))</span></div>
+
+<div class="axiom"><strong>Infinity</strong><br>
+<span class="sym">∃x (∅∈x ∧ ∀y (y∈x → y∪{y}∈x))</span></div>
+
+<div class="axiom"><strong>Separation (schema)</strong><br>
+For any formula φ(z, p₁…pₙ) with free variables among those shown:<br>
+<span class="sym">∀p₁…∀pₙ ∀x ∃y ∀z (z∈y ↔ (z∈x ∧ φ(z,p₁…pₙ)))</span></div>
+
+<div class="axiom"><strong>Replacement (schema)</strong><br>
+If φ(x,y,p…) is functional in x, then the image of any set under the class function defined by φ is a set.</div>
+
+<div class="axiom"><strong>Foundation (Regularity)</strong><br>
+<span class="sym">∀x (x≠∅ → ∃y (y∈x ∧ y∩x=∅))</span></div>
+
+<div class="axiom"><strong>Axiom of Choice</strong><br>
+<span class="sym">∀x (∅∉x → ∃f (f is a choice function on x))</span></div>
+
+<p><em>FuturPedia formalization of ZFC.</em></p>
+</body>
+</html>
