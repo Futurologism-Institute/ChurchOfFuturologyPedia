@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cryptographic Primitives — Symbolic | FuturPedia</title>
+<style>body{font-family:system-ui,sans-serif;max-width:860px;margin:2rem auto;padding:0 1rem;line-height:1.55}.sym{font-family:"Cambria Math",serif;font-size:1.12em}.axiom{background:#eef;padding:.7rem 1rem;border-left:4px solid #36c;margin:1rem 0}h1{border-bottom:2px solid #222}</style>
+</head>
+<body>
+<h1>Cryptographic Primitives</h1>
+
+<div class="axiom"><strong>Symmetric Encryption</strong><br>
+A scheme (Gen, Enc, Dec) is IND-CPA secure if no efficient adversary can distinguish encryptions of chosen plaintexts with non-negligible advantage.</div>
+
+<div class="axiom"><strong>Public-Key Encryption</strong><br>
+Key generation produces (pk, sk). Security notions: IND-CPA, IND-CCA.</div>
+
+<div class="axiom"><strong>One-Way Function</strong><br>
+f is one-way if it is easy to compute but hard to invert on average.</div>
+
+<div class="axiom"><strong>Trapdoor One-Way Function</strong><br>
+Easy to invert given trapdoor information (basis of public-key crypto).</div>
+
+<div class="axiom"><strong>Digital Signature</strong><br>
+(Gen, Sign, Vrfy) satisfying existential unforgeability under chosen-message attack (EUF-CMA).</div>
+
+<p><em>FuturPedia formalization of core notions.</em></p>
+</body>
+</html>

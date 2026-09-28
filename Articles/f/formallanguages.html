@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Formal Languages & Automata | FuturPedia</title>
+<style>body{font-family:system-ui,sans-serif;max-width:860px;margin:2rem auto;padding:0 1rem;line-height:1.55}.sym{font-family:"Cambria Math",serif;font-size:1.12em}.axiom{background:#eef;padding:.7rem 1rem;border-left:4px solid #36c;margin:1rem 0}h1{border-bottom:2px solid #222}</style>
+</head>
+<body>
+<h1>Formal Languages & Automata</h1>
+
+<div class="axiom"><strong>Alphabet & Language</strong><br>
+Σ finite alphabet; Σ* free monoid; a language L ⊆ Σ*.</div>
+
+<div class="axiom"><strong>Chomsky Hierarchy</strong><br>
+Type-0 (unrestricted) ⊃ Type-1 (context-sensitive) ⊃ Type-2 (context-free) ⊃ Type-3 (regular)</div>
+
+<div class="axiom"><strong>DFA</strong><br>
+M = (Q, Σ, δ, q₀, F) with δ : Q × Σ → Q total.<br>
+L(M) = {w | δ̂(q₀,w) ∈ F}</div>
+
+<div class="axiom"><strong>Pumping Lemma (Regular)</strong><br>
+If L is regular then ∃p such that any w ∈ L with |w|≥p can be written xyz with |xy|≤p, |y|≥1, and xyᵏz ∈ L for all k≥0.</div>
+
+<div class="axiom"><strong>Context-Free Grammars & Pushdown Automata</strong><br>
+Equivalent formalisms for Type-2 languages.</div>
+
+<p><em>FuturPedia formalization.</em></p>
+</body>
+</html>

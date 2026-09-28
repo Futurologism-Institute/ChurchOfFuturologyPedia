@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Proof Theory — Natural Deduction | FuturPedia</title>
+<style>body{font-family:system-ui,sans-serif;max-width:860px;margin:2rem auto;padding:0 1rem;line-height:1.55}.sym{font-family:"Cambria Math",serif;font-size:1.12em}.axiom{background:#eef;padding:.7rem 1rem;border-left:4px solid #36c;margin:1rem 0}h1{border-bottom:2px solid #222}</style>
+</head>
+<body>
+<h1>Proof Theory (Natural Deduction Sketch)</h1>
+
+<p>Focus on Gentzen-style natural deduction for classical and intuitionistic propositional/first-order logic.</p>
+
+<div class="axiom"><strong>Introduction & Elimination Rules (selected)</strong><br>
+∧I: from φ and ψ infer φ∧ψ<br>
+∧E: from φ∧ψ infer φ (or ψ)<br>
+→I: from [φ] … ψ infer φ→ψ (discharge assumption)<br>
+→E (Modus Ponens): from φ→ψ and φ infer ψ<br>
+∀I: from φ(x) (x not free in open assumptions) infer ∀x φ(x)<br>
+∀E: from ∀x φ(x) infer φ(t)</div>
+
+<div class="axiom"><strong>Normalization</strong><br>
+Every derivation can be reduced to a normal form without detours (maximum formulas).</div>
+
+<div class="axiom"><strong>Cut-Elimination (Gentzen)</strong><br>
+In sequent calculus, the Cut rule is admissible; every proof has a cut-free version.</div>
+
+<p><em>FuturPedia formalization.</em></p>
+</body>
+</html>
