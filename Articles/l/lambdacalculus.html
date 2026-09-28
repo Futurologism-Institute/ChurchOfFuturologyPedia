@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lambda Calculus — Symbolic Formalization | FuturPedia</title>
+<style>
+body{font-family:system-ui,sans-serif;max-width:820px;margin:2rem auto;padding:0 1rem;line-height:1.6}
+h1{border-bottom:2px solid #222}
+.sym{font-family:"Cambria Math",serif;font-size:1.15em}
+pre{background:#f6f8fa;padding:1rem;overflow-x:auto;border-radius:6px}
+.axiom{background:#eef;padding:.8rem;border-left:4px solid #36c;margin:1rem 0}
+</style>
+</head>
+<body>
+<h1>λ-Calculus — Symbolic Formalization</h1>
 
+<p>Source formalization derived from the classical untyped λ-calculus (Church, 1930s–1940).</p>
+
+<h2>1. Syntax (Inductive Definition)</h2>
+<div class="axiom">
+Let <span class="sym">Var</span> be a countably infinite set of variables.<br>
+The set of λ-terms <span class="sym">Λ</span> is the smallest set such that:
+<ol>
+<li>If <span class="sym">x ∈ Var</span>, then <span class="sym">x ∈ Λ</span> (variable).</li>
+<li>If <span class="sym">x ∈ Var</span> and <span class="sym">M ∈ Λ</span>, then <span class="sym">(λx.M) ∈ Λ</span> (abstraction).</li>
+<li>If <span class="sym">M,N ∈ Λ</span>, then <span class="sym">(M N) ∈ Λ</span> (application).</li>
+</ol>
+</div>
+
+<h2>2. Free Variables</h2>
+<pre class="sym">
+FV(x)          = {x}
+FV(λx.M)       = FV(M) \ {x}
+FV(M N)        = FV(M) ∪ FV(N)
+</pre>
+
+<h2>3. Capture-Avoiding Substitution</h2>
+<pre class="sym">
+[x := N]x      = N
+[x := N]y      = y          (y ≠ x)
+[x := N](λy.M) = λy.[x := N]M   (y ≠ x ∧ y ∉ FV(N))
+[x := N](M P)  = ([x := N]M) ([x := N]P)
+</pre>
+
+<h2>4. Reduction Rules</h2>
+<div class="axiom">
+<strong>α-conversion</strong><br>
+<span class="sym">λx.M ≡_α λy.[x := y]M</span> &nbsp;&nbsp;(y ∉ FV(M))
+</div>
+<div class="axiom">
+<strong>β-reduction</strong><br>
+<span class="sym">(λx.M) N →_β [x := N]M</span>
+</div>
+<div class="axiom">
+<strong>η-conversion</strong> (optional, extensionality)<br>
+<span class="sym">λx.(M x) ≡_η M</span> &nbsp;&nbsp;(x ∉ FV(M))
+</div>
+
+<h2>5. Key Theorems (Symbolic)</h2>
+<ul>
+<li><strong>Church–Rosser</strong>: If <span class="sym">M →* N₁</span> and <span class="sym">M →* N₂</span>, then ∃P such that <span class="sym">N₁ →* P</span> and <span class="sym">N₂ →* P</span> (confluence up to α).</li>
+<li><strong>Turing-completeness</strong>: Untyped λ-calculus can simulate any Turing machine (and vice versa).</li>
+</ul>
+
+<h2>6. Church Numerals (Encoding)</h2>
+<pre class="sym">
+0  ≜ λf.λx.x
+1  ≜ λf.λx.f x
+2  ≜ λf.λx.f (f x)
+SUCC ≜ λn.λf.λx.f (n f x)
+PLUS ≜ λm.λn.λf.λx.m f (n f x)
+</pre>
+
+<p><em>FuturPedia formalization — converted from classical sources into pure symbolic presentation.</em></p>
+</body>
+</html>

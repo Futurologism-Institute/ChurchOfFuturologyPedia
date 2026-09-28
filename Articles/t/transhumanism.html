@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Transhumanism — Symbolic Formalization | FuturPedia</title>
+<style>
+body{font-family:system-ui,sans-serif;max-width:820px;margin:2rem auto;padding:0 1rem;line-height:1.6}
+h1{border-bottom:2px solid #222}
+.sym{font-family:"Cambria Math",serif;font-size:1.15em}
+.axiom{background:#eef;padding:.8rem;border-left:4px solid #36c;margin:1rem 0}
+</style>
+</head>
+<body>
+<h1>Transhumanism — Symbolic Formalization</h1>
 
+<p>Core claims of the contemporary transhumanist movement formalized as a system of predicates and modal statements.</p>
+
+<h2>1. Primitive Predicates</h2>
+<ul>
+<li><span class="sym">Human(x)</span> — x is a present-day biological human.</li>
+<li><span class="sym">Enhanced(x, t)</span> — x has undergone technological enhancement at time t.</li>
+<li><span class="sym">Posthuman(x)</span> — capacities of x strictly exceed those of any present human.</li>
+<li><span class="sym">Tech(τ)</span> — τ is an enhancement technology (NBIC: nano, bio, info, cogno).</li>
+<li><span class="sym">ExistentialRisk(r)</span> — r threatens the survival of Earth-originating intelligent life.</li>
+</ul>
+
+<h2>2. Core Axioms / Commitments</h2>
+<div class="axiom">
+<strong>Possibility of Enhancement</strong><br>
+<span class="sym">∀x (Human(x) → ◇∃τ (Tech(τ) ∧ Enhanced(x, τ)))</span><br>
+<em>“It is possible for any human to be enhanced by some technology.”</em>
+</div>
+
+<div class="axiom">
+<strong>Desirability of Enhancement</strong><br>
+<span class="sym">∀x (Human(x) → Prefer(Enhanced(x), ¬Enhanced(x)))</span><br>
+<em>(where Prefer is a preference relation over future states)</em>
+</div>
+
+<div class="axiom">
+<strong>Posthuman Trajectory</strong><br>
+<span class="sym">∃ path π such that Human →_π Posthuman</span><br>
+<em>There exists a continuous (or stepwise) technological trajectory from human to posthuman.</em>
+</div>
+
+<div class="axiom">
+<strong>Existential Risk Mitigation</strong><br>
+<span class="sym">∀r (ExistentialRisk(r) → Ought(Minimize(r)))</span>
+</div>
+
+<h2>3. Definition of Transhumanism (Formal)</h2>
+<div class="axiom">
+<span class="sym">Transhumanism ≜</span><br>
+the class of philosophies that affirm both the <strong>possibility</strong> and the <strong>desirability</strong> of the axioms above, together with the ethical study of the technologies that realize them.
+</div>
+
+<h2>4. Relation to Posthumanism</h2>
+<p><span class="sym">Transhumanism ⊂ Activist-Posthumanism</span> in most taxonomies (Bostrom, More, Sorgner). The key distinction is the retention of a continuous developmental path rather than a radical ontological rupture.</p>
+
+<p><em>FuturPedia formalization — symbolic extraction of the central commitments of the movement.</em></p>
+</body>
+</html>

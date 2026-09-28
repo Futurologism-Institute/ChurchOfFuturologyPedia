@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Wenittain Logic — Symbolic Sketch | FuturPedia</title>
+<style>
+body{font-family:system-ui,sans-serif;max-width:820px;margin:2rem auto;padding:0 1rem;line-height:1.6}
+h1{border-bottom:2px solid #222}
+.sym{font-family:"Cambria Math",serif;font-size:1.15em}
+.axiom{background:#eef;padding:.8rem;border-left:4px solid #36c;margin:1rem 0}
+</style>
+</head>
+<body>
+<h1>Wenittain Logic — Symbolic Sketch</h1>
 
+<p>A logic developed in the context of Mathematical Futurology and Wenitte-theoretic frameworks. Emphasis on dependent choice, sequential approximation of probability, and temporal structure of futures.</p>
+
+<h2>1. Base</h2>
+<p>Wenittain Logic sits between classical first-order logic and systems that reject full Axiom of Choice in favour of Dependent Choice (DC).</p>
+
+<div class="axiom">
+<strong>Dependent Choice (DC)</strong><br>
+If R is a binary relation on a non-empty set A such that ∀x∃y (x R y), then there exists a sequence (xₙ) with xₙ R xₙ₊₁ for all n.
+</div>
+
+<h2>2. Probability via Sequential Approximation</h2>
+<p>Probability values are defined through successive refinements rather than as primitive real numbers in [0,1].</p>
+<div class="axiom">
+<span class="sym">P(φ) ≜ limₙ αₙ(φ)</span><br>
+where each αₙ is a finitary approximation consistent with DC.
+</div>
+
+<h2>3. Temporal Operators (sketch)</h2>
+<ul>
+<li><span class="sym">◯φ</span> — φ holds in the immediate next Future along a coherent run.</li>
+<li><span class="sym">□φ</span> — φ holds in all accessible Futures.</li>
+<li><span class="sym">◇φ</span> — φ holds in some accessible Future.</li>
+</ul>
+
+<p>Accessibility is governed by the precedence relation ≺ of Mathematical Futurology.</p>
+
+<h2>4. Connection to MF</h2>
+<p>Wenittain probability supplies a natural semantics for the ternary valuation of Mathematical Futurology when restricted to coherent runs.</p>
+
+<p><em>FuturPedia working formalization — to be refined.</em></p>
+</body>
+</html>
