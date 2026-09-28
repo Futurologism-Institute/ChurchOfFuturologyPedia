@@ -1,6 +1,6 @@
 # FuturPedia
 
-A living encyclopedia of concepts formalized in **symbolic logic**, with special emphasis on Mathematical Futurology, Wenittain frameworks, and related systems.
+A living encyclopedia of concepts formalized in **symbolic logic**, with emphasis on Mathematical Futurology, foundational mathematics, physics, philosophy, and computer science.
 
 ## Structure
 
@@ -9,22 +9,48 @@ A living encyclopedia of concepts formalized in **symbolic logic**, with special
 
 ## Formalization Principle
 
-Wherever possible, entries are expressed using:
-- inductive definitions
-- axiom schemata
-- quantifiers, predicates, and modal operators
-- reduction rules or derivation rules
+Entries are expressed using inductive definitions, axiom schemata, quantifiers, predicates, modal operators, and reduction/derivation rules. Classical sources are transformed into pure symbolic presentations rather than copied.
 
-Classical sources (Wikipedia, primary literature) are transformed rather than copied.
+---
 
 ## Current Formalized Entries
 
-- Lambda Calculus
-- Transhumanism
+### Mathematical Futurology & Logic Systems
 - Mathematical Futurology / Futurologism
 - Wenittain Logic
+- Lambda Calculus
+- Classical Logic
+- Modal Logic
+- Type Theory
 
-Further entries will be added and refined.
+### Foundations of Mathematics
+- Set Theory (ZFC)
+- Category Theory
+- Group Theory
+- Topology (point-set)
+- Probability (Kolmogorov axioms)
+- Gödel’s Incompleteness Theorems
+
+### Physics
+- Special Relativity
+- General Relativity
+- Quantum Mechanics (postulates)
+- Thermodynamics (laws)
+- Statistical Mechanics
+
+### Computer Science
+- Turing Machines
+- Computability Theory
+- Complexity Classes (P, NP, …)
+- Information Theory (Shannon)
+
+### Philosophy
+- Epistemology (JTB + Gettier)
+- Philosophy of Science (Popper, Kuhn, Lakatos, Bayesian)
+- Transhumanism
 
 ---
+
+More entries will be added continuously. Contributions and refinements welcome.
+
 *Futurologism Institute*
