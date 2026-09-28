@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SIR Epidemic Model | FuturPedia</title>
+<style>body{font-family:system-ui,sans-serif;max-width:860px;margin:2rem auto;padding:0 1rem;line-height:1.55}.sym{font-family:"Cambria Math",serif;font-size:1.12em}.axiom{background:#eef;padding:.7rem 1rem;border-left:4px solid #36c;margin:1rem 0}h1{border-bottom:2px solid #222}</style>
+</head>
+<body>
+<h1>SIR Compartmental Epidemic Model</h1>
+
+<div class="axiom">
+Population partitioned into Susceptible (S), Infectious (I), Recovered (R) with S+I+R = N (constant).
+</div>
+
+<div class="axiom"><strong>Differential Equations</strong><br>
+<span class="sym">dS/dt = −β S I / N</span><br>
+<span class="sym">dI/dt = β S I / N − γ I</span><br>
+<span class="sym">dR/dt = γ I</span><br>
+where β is the transmission rate and γ the recovery rate.</div>
+
+<div class="axiom"><strong>Basic Reproduction Number</strong><br>
+<span class="sym">R₀ = β / γ</span><br>
+Epidemic spreads if R₀ > 1.</div>
+
+<p><em>FuturPedia medicinal / epidemiology formalization.</em></p>
+</body>
+</html>
